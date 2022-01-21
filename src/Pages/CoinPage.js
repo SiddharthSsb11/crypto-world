@@ -107,8 +107,8 @@ const CoinPage = () => {
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h6"
-              style={{ fontFamily: "Montserrat", color: "gold", fontWeight: "bold" }}
+              variant="h5"
+              style={{ fontFamily: "Montserrat", color: "gold", /* fontWeight: "bold" */ }}
             >
               {numberWithCommas(coin?.market_cap_rank)}
             </Typography>
@@ -120,8 +120,8 @@ const CoinPage = () => {
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h6"
-              style={{ fontFamily: "Montserrat", color: "gold", fontWeight: "bold"}}
+              variant="h5"
+              style={{ fontFamily: "Montserrat", color: "gold", /* fontWeight: "bold" */}}
             >
               {symbol}{" "}
               {numberWithCommas(
@@ -135,8 +135,8 @@ const CoinPage = () => {
             </Typography>
             &nbsp; &nbsp;
             <Typography
-              variant="h6"
-              style={{ fontFamily: "Montserrat", color: "gold", fontWeight: "bold"}}
+              variant="h5"
+              style={{ fontFamily: "Montserrat", color: "gold", /* fontWeight: "bold" */}}
             >
               {symbol}{" "}
               {numberWithCommas(

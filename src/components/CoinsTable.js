@@ -17,8 +17,9 @@ import {
   Table,
   Paper,
 } from "@material-ui/core";
-import axios from "axios";
-import { CoinList } from "../config/api";
+//import axios from "axios";
+//import { CoinList } from "../config/api";
+
 import { useNavigate } from "react-router-dom";
 
 const useStyles = makeStyles((theme) =>({
@@ -52,26 +53,15 @@ const numberWithCommas = function (x) { //regex string
 };
 
 export default function CoinsTable() {
-  const [coins, setCoins] = useState([]);
-  const [loading, setLoading] = useState(false);
+  
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
-  const { currency, symbol } = useContext(CryptoContext);;
+  const { currency, symbol, coins, loading, fetchCoins } = useContext(CryptoContext);;
 
   const classes = useStyles();
   const navigate = useNavigate();
 
-
-
-  const fetchCoins = async () => {
-    setLoading(true);
-    const { data } = await axios.get(CoinList(currency));
-    console.log(data);
-
-    setCoins(data);
-    setLoading(false);
-  };
 
   useEffect(() => {
     fetchCoins();
