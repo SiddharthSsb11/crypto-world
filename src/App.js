@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
 import "./App.css";
@@ -7,6 +7,7 @@ import Header from "./components/Header";
 //import Banner from "./components/Banner/Banner";
 import HomePage from "./Pages/HomePage";
 import CoinPage from "./Pages/CoinPage";
+import Alert from "./components/Alert";
 
 const useStyles = makeStyles(() => ({
   App: {
@@ -16,19 +17,21 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const App= () => {
-
+const App = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.App}>
-      <Header />
-      <Routes>
-        <Route path="/" element = {<HomePage />} />
-        <Route path="/coins/:id" element = {<CoinPage />} />
-      </Routes>  
-    </div>
+    <React.Fragment>
+      <div className={classes.App}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/coins/:id" element={<CoinPage />} />
+        </Routes>
+      </div>
+      <Alert />
+    </React.Fragment>
   );
-}
+};
 
 export default App;
