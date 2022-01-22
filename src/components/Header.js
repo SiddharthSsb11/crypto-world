@@ -2,6 +2,8 @@ import { AppBar, Container, MenuItem, Select, Toolbar, Typography } from "@mater
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import React, {useContext,/*  useState  */} from "react";
 import CryptoContext from "../store/crypto-context";
+import AuthModal from "./Authentication/AuthModal";
+
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -24,7 +26,7 @@ const Header = () => {
   const classes = useStyles();
   //const [currency, setCurrency] = useState("USD");
 
-  const {currency, setCurrency} = useContext(CryptoContext);
+  const {currency, setCurrency, user} = useContext(CryptoContext);
   
   console.log(currency, 'check ');
 
@@ -50,6 +52,7 @@ const Header = () => {
               <MenuItem style={{color: "gold", fontWeight: "bold" }} value={"USD"}>USD</MenuItem>
               <MenuItem style={{color: "gold", fontWeight: "bold"}} value={"INR"}>INR</MenuItem>
             </Select>
+            {user ? "Logout" : <AuthModal />}
           </Toolbar>
         </Container>
       </AppBar>
