@@ -1,10 +1,10 @@
 import { AppBar, Container, MenuItem, Select, Toolbar, Typography } from "@material-ui/core";
 import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import React, {useContext,/*  useState  */} from "react";
+import { useNavigate } from "react-router-dom";
 import CryptoContext from "../store/crypto-context";
 import AuthModal from "./Authentication/AuthModal";
 import UserSidebar from "./Authentication/UserSidebar";
-
 
 
 const useStyles = makeStyles((theme) => ({
@@ -27,10 +27,10 @@ const darkTheme = createTheme({
 const Header = () => {
   const classes = useStyles();
   //const [currency, setCurrency] = useState("USD");
-
+  const navigate = useNavigate();
   const {currency, setCurrency, user} = useContext(CryptoContext);
   
-  console.log(currency, 'check ');
+  //console.log(currency, 'check ');
 
 
   return (
@@ -38,7 +38,7 @@ const Header = () => {
       <AppBar color="transparent" position="static">
         <Container>
           <Toolbar>
-            <Typography variant="h5" className={classes.title}>
+            <Typography variant="h5" className={classes.title} style={{cursor: "pointer"}} onClick={() => navigate('/')}>
               Crypto World
             </Typography>
             {/* <Button color="inherit">Login</Button> */}

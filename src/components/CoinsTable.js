@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { /* useEffect, */ useState, useContext } from "react";
 import CryptoContext from "../store/crypto-context";
 import { makeStyles } from "@material-ui/core/styles";
 import Pagination from "@material-ui/lab/Pagination";
@@ -57,16 +57,16 @@ export default function CoinsTable() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
 
-  const { currency, symbol, coins, loading, fetchCoins } = useContext(CryptoContext);;
+  const { /* currency, */ symbol, coins, loading,/*  fetchCoins */ } = useContext(CryptoContext);;
 
   const classes = useStyles();
   const navigate = useNavigate();
 
 
-  useEffect(() => {
+ /*  useEffect(() => {
     fetchCoins();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currency]);
+  }, [currency]); */
 
   const handleSearch = () => {
     return coins.filter(

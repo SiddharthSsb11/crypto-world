@@ -27,7 +27,7 @@ const Login = (props) => {
         message: `Sign Up Successful. Welcome ${result.user.email}`,
         type: "success",
       });
-      console.log(result, 'userInfo');
+      //console.log(result, 'userInfo');
 
       props.handleClose(); //on succesfull login--modal close
 
