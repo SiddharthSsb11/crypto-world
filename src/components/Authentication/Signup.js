@@ -30,6 +30,7 @@ const Signup = (props) => {
         message: `Sign Up Successful. Welcome ${result.user.email}`,
         type: "success",
       });
+      
       console.log(result, "userInfo on sign up");
       props.handleClose();
 

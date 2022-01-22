@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import CryptoContext from './crypto-context';
-import { onAuthStateChanged } from "firebase/auth";
+import { onAuthStateChanged } from "firebase/auth"; //from fb 
 import { auth, /* db */ } from "../firebase";
 import axios from "axios";
 import { CoinList } from "../config/api";
@@ -25,7 +25,9 @@ const CryptoProvider = (props) => {
         onAuthStateChanged(auth, (user) => { //CB arg inbuilt from fb
           if (user) setUser(user);
           else setUser(null);
+          console.log('user check uid', user);
         });
+        
     }, []);
 
     const fetchCoins = async () => {

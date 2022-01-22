@@ -3,6 +3,8 @@ import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core/styles
 import React, {useContext,/*  useState  */} from "react";
 import CryptoContext from "../store/crypto-context";
 import AuthModal from "./Authentication/AuthModal";
+import UserSidebar from "./Authentication/UserSidebar";
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -52,7 +54,7 @@ const Header = () => {
               <MenuItem style={{color: "gold", fontWeight: "bold" }} value={"USD"}>USD</MenuItem>
               <MenuItem style={{color: "gold", fontWeight: "bold"}} value={"INR"}>INR</MenuItem>
             </Select>
-            {user ? "Logout" : <AuthModal />}
+            {user ? <UserSidebar /> : <AuthModal />}
           </Toolbar>
         </Container>
       </AppBar>
