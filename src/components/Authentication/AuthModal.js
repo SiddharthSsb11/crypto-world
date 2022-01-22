@@ -1,15 +1,15 @@
+import React, {useState, useContext} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import { Button, Tab, Tabs, AppBar, /* Box */ } from "@material-ui/core";
+import { Button, Tab, Tabs, AppBar,  Box  } from "@material-ui/core";
 import Signup from "./Signup";
 import Login from "./Login";
-import { useState } from "react";
-//import { CryptoState } from "../../CryptoContext";
-//import { auth } from "../../firebase";
-//import GoogleButton from "react-google-button";
-//import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth } from "../../firebase";
+import GoogleButton from "react-google-button";
+import CryptoContext from "../../store/crypto-context";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -38,7 +38,7 @@ export default function AuthModal() {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
-  //const { setAlert } = CryptoState();
+  const { setAlert } = useContext(CryptoContext);
 
   const handleOpen = () => {
     setOpen(true);
@@ -56,10 +56,10 @@ export default function AuthModal() {
   //console.log(value, 'tab value');
   
 
-  /* const googleProvider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider(); //fb
 
   const signInWithGoogle = () => {
-    signInWithPopup(auth, googleProvider)
+    signInWithPopup(auth, googleProvider) //fb
       .then((res) => {
         setAlert({
           open: true,
@@ -67,7 +67,7 @@ export default function AuthModal() {
           type: "success",
         });
 
-        handleClose();
+        handleClose(); //close on success
       })
       .catch((error) => {
         setAlert({
@@ -77,7 +77,7 @@ export default function AuthModal() {
         });
         return;
       });
-  }; */
+  };
 
   return (
     <div>
@@ -119,6 +119,13 @@ export default function AuthModal() {
             </AppBar>
             {value === 0 && <Login handleClose={handleClose} />}
             {value === 1 && <Signup handleClose={handleClose} />}
+            <Box className={classes.google}>
+              <span>OR</span>
+              <GoogleButton
+                style={{ width: "100%", outline: "none" }}
+                onClick={signInWithGoogle}
+              />
+            </Box>
           </div>
         </Fade>
       </Modal>
