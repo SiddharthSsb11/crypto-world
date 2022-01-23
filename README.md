@@ -29,7 +29,7 @@ please open an issue first to discuss what you would like to change.
 
 ## Tech Stack
 
-ReactJS, ChartJS, Material-UI Firebase as a Backend Service, Firestore Database, Context 
+ReactJS, ChartJS, Material-UI, Firebase as a Backend Service, Firestore Database, Context 
 
 ## Hosted/Deployed
 
