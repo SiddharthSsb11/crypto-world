@@ -1,7 +1,16 @@
 # Crypto-World
 
+> An application that tracks the performance of your favorite cryptocurrency and see how it has changed over time
+
 It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use.
 
+```
+This is still a work in progress
+If you find anything buggy you can report it to me.
+Pull requests are welcome. For major changes, 
+please open an issue first to discuss what you would like to change.
+
+```
 
 ## Features
 
@@ -28,12 +37,14 @@ https://crypto-world-ssb.netlify.app/
 npm install
 ```
 
-## Seed Database
+### Sample
 
-Sample user login
-```bash
+```
+Sample User Logins
+
 elon@test.com
 musktest
+
 ```
 
 ## Available Scripts
