@@ -31,7 +31,7 @@ const Signup = (props) => {
         type: "success",
       });
       
-      console.log(result, "userInfo on sign up");
+      //console.log(result, "userInfo on sign up");
       props.handleClose();
 
     } catch (error) {
