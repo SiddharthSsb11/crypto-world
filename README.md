@@ -12,6 +12,12 @@ please open an issue first to discuss what you would like to change.
 
 ```
 
+### Few Screenshots
+
+![Homepage](/screenshots/1.png "Homepage")
+![Coinpage](/screenshots/2.png "Coinpage")
+![Wishlist](/screenshots/3.png "Wishlist")
+
 ## Features
 
 - User Profile.
