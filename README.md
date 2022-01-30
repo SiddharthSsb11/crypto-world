@@ -16,7 +16,7 @@ please open an issue first to discuss what you would like to change.
 
 ![Homepage](/screenshots/1.png "Homepage")
 ![Coinpage](/screenshots/2.png "Coinpage")
-![Wishlist](/screenshots/3.png "Wishlist")
+![Watchlist](/screenshots/3.png "Watchlist")
 
 ## Features
 
