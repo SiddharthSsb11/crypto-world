@@ -6,7 +6,7 @@ It is a platform where you can track all and remain up-to-date in regards to the
 
 ```
 This is still a work in progress
-If you find anything buggy you can report it to me.
+If you find any bugs you can report it to me.
 Pull requests are welcome. For major changes, 
 please open an issue first to discuss what you would like to change.
 
@@ -25,6 +25,8 @@ please open an issue first to discuss what you would like to change.
 - Full featured wishlist functionality.
 - Graphical data representation feature.
 - Authenticated user can access the CRUD functionality. 
+- Top crytpocurrency carousel.
+- All the data is stored in the firebase firestore database i.e. <i>persistant</i>
 
 
 ## Tech Stack
@@ -36,22 +38,21 @@ ReactJS, ChartJS, Material-UI, Firebase as a Backend Service, Firestore Database
 https://crypto-world-ssb.netlify.app/
 
 
-## Install Dependencies
+### Sample
 
+```Sample User Login```
+
+| Email | Password  |
+| -------- | --------- |
+| elon@test.com | musktest |
+
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Sample
-
-```
-Sample User Logins
-
-elon@test.com
-musktest
-
-```
 
 ## Available Scripts
 
