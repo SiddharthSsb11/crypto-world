@@ -2,11 +2,16 @@
 
 > An application that tracks the performance of your favorite cryptocurrency and see how it has changed over time
 
+<<<<<<< HEAD
 It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use. This app is powered by [Firebase](https://firebase.google.com/)
+=======
+It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use.
+This is a _responsive web application_ for viewing in both Mobile and Desktop.
+>>>>>>> 042f47e93d49ab7653f2db9a499a649e30cb4ecb
 
 ```
 This is still a work in progress
-If you find anything buggy you can report it to me.
+If you find any bugs you can report it to me.
 Pull requests are welcome. For major changes, 
 please open an issue first to discuss what you would like to change.
 
@@ -16,7 +21,7 @@ please open an issue first to discuss what you would like to change.
 
 ![Homepage](/screenshots/1.png "Homepage")
 ![Coinpage](/screenshots/2.png "Coinpage")
-![Wishlist](/screenshots/3.png "Wishlist")
+![Watchlist](/screenshots/3.png "Watchlist")
 
 ## Features
 
@@ -25,33 +30,34 @@ please open an issue first to discuss what you would like to change.
 - Full featured wishlist functionality.
 - Graphical data representation feature.
 - Authenticated user can access the CRUD functionality. 
+- Top crytpocurrency carousel.
+- All the data is stored in the firebase firestore database i.e. <i>persistant</i>
 
 
 ## Tech Stack
 
-ReactJS, ChartJS, Firebase as a Backend Service, Firestore Database, Context 
+ReactJS, ChartJS, Material-UI, Firebase as a Backend Service, Firestore Database, Context 
 
 ## Hosted/Deployed
 
 https://crypto-world-ssb.netlify.app/
 
 
-## Install Dependencies
+### Sample
 
+```Sample User Login```
+
+| Email | Password  |
+| -------- | --------- |
+| elon@test.com | musktest |
+
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Sample
-
-```
-Sample User Logins
-
-elon@test.com
-musktest
-
-```
 
 ## Available Scripts
 
