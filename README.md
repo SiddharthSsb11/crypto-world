@@ -2,7 +2,7 @@
 
 > An application that tracks the performance of your favorite cryptocurrency and see how it has changed over time
 
-It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use.
+It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use. This app is powered by [Firebase](https://firebase.google.com/)
 
 ```
 This is still a work in progress
