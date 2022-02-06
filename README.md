@@ -2,12 +2,15 @@
 
 > An application that tracks the performance of your favorite cryptocurrency and see how it has changed over time
 
-<<<<<<< HEAD
-It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use. This app is powered by [Firebase](https://firebase.google.com/)
-=======
-It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. Create your account and add your favorite coins. It is simple, informative and easy to use.
+It is a platform where you can track all and remain up-to-date in regards to the cryptocurrency in one place. You will be able to see their price, latest news, compare, volume, market cap and past data represented by graphs. 
+
+Create your account and add your favorite coins. It is simple, informative and easy to use.
+
+Made using [React JS](https://reactjs.org/docs/getting-started.html) and powered by [Firebase](https://firebase.google.com/).
+
 This is a _responsive web application_ for viewing in both Mobile and Desktop.
->>>>>>> 042f47e93d49ab7653f2db9a499a649e30cb4ecb
+
+
 
 ```
 This is still a work in progress
@@ -31,7 +34,7 @@ please open an issue first to discuss what you would like to change.
 - Graphical data representation feature.
 - Authenticated user can access the CRUD functionality. 
 - Top crytpocurrency carousel.
-- All the data is stored in the firebase firestore database i.e. <i>persistant</i>
+- All the data is stored in the firebase firestore database i.e. <i>persistent</i>
 
 
 ## Tech Stack
