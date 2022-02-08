@@ -25,6 +25,7 @@ please open an issue first to discuss what you would like to change.
 ![Homepage](/screenshots/1.png "Homepage")
 ![Coinpage](/screenshots/2.png "Coinpage")
 ![Watchlist](/screenshots/3.png "Watchlist")
+![Login](/screenshots/4.png "Login")
 
 ## Features
 
