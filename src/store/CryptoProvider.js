@@ -25,8 +25,9 @@ const CryptoProvider = (props) => {
 
     useEffect(() => {
         if (user) {
-          const coinRef = doc(db, "watchlist", user?.uid);
-          var unsubscribe = onSnapshot(coinRef, (coin) => { //cb fb
+          const coinRef = doc(db, "watchlist", user?.uid); //collection reference db table //doc fb
+          var unsubscribe = onSnapshot(coinRef, (coin) => { //cb fb //var to avoiding blockscope
+            //onSnaphsot checks of our db is updated or not wrt to the reference we created
             if (coin.exists()) {
               //console.log(coin.data().coins, coin.data()); //coin.data()--data in userId in db //[btc, eth],{[]}
               

@@ -76,12 +76,13 @@ const CoinPage = () => {
   };
 
   const addToWatchlist = async () => {
+    //refrence to our db table
     const coinRef = doc(db, "watchlist", user.uid);
     try {
       await setDoc(
         coinRef,
         { coins: watchlist ? [...watchlist, coin?.id] : [coin?.id] },
-        { merge: true }
+        { merge: true } //merging everything which is already in userId doc
       );
 
       setAlert({
