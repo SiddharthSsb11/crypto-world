@@ -32,7 +32,6 @@ const Header = () => {
   
   //console.log(currency, 'check ');
 
-
   return (
     <ThemeProvider theme={darkTheme}>
       <AppBar color="transparent" position="static">
