@@ -35,6 +35,7 @@ please open an issue first to discuss what you would like to change.
 - Graphical data representation feature.
 - Authenticated user can access the CRUD functionality. 
 - Top crytpocurrency carousel.
+- Mobile responsive.
 - All the data is stored in the firebase firestore database i.e. <i>persistent</i>
 
 
